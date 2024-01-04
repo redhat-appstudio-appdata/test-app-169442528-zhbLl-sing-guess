@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: go-169442528
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/skhileri-tenant/test-app-169442528/go-169442528@sha256:786f656d7740e43426b26b97262ed1626ecf8e12ba35f3e0a8d3fe11330385fe
+        name: my-go
+        resources: {}
+status: {}
